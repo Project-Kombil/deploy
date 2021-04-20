@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Main Board</title>
+    <link rel="stylesheet" href="login-page.css">
+</head>
+
+<body>
+    <main id="main-holder">
+        <h1>Tweets</h1>
+
+        <p class="this"> tweeting as
+            <%=user%>
+        </p>
+
+        <form id="login-form" action="/createTweet" method="POST">
+            <textarea name="content" cols="30" rows="10" placeholder="type your tweet..."></textarea>
+            <input type="submit" value="Post Tweet" id="login-form-submit">
+
+        </form>
+        <div id="logout">
+            <a href="/logout"><img src="turn-off.png" alt="turn off button" srcset="" width="50px" height=""></a>
+            <p>LogOut</p>
+        </div>
+
+        <div id="tweet">
+            <a href="/view"><img src="twitter.png" alt="Twitter" srcset="" width="50px" height=""></a>
+            <p>Tweets</p>
+        </div>
+
+
+    </main>
+</body>
+
+</html>

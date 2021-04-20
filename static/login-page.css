@@ -1,0 +1,241 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #ff0101;
+}
+
+h1,
+input {
+    font-family: cursive;
+    font-weight: bold;
+    color: rgb(94, 3, 3);
+}
+
+#main-holder {
+    width: 50%;
+    height: 70%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 30px 5px black;
+}
+
+
+/* ---------- for public tweet page ------------ */
+
+#main-holder2 {
+    width: 50%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 30px 5px black;
+}
+
+.chat-box {
+    overflow: auto;
+    margin-top: 10px;
+    height: 430px;
+    width: 450px;
+    background-color: rgba(165, 165, 165, 0.247);
+    border-radius: 5px;
+    overflow-wrap: break-word;
+}
+
+
+/* -----Scroll Bar for chat box ---------- */
+
+.chat-box::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+    border: 1px solid rgba(196, 5, 5, 0.527);
+    border-radius: 5px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background: rgba(218, 0, 0, 0.623);
+    border-radius: 10px;
+}
+
+.chat-box::-webkit-scrollbar-thumb:hover {
+    background: #8a0000da;
+}
+
+
+/* ----------------------------------------- */
+
+.buttons {
+    width: 50%;
+    height: 90%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#login-form {
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.login-form-field::placeholder {
+    color: #5e5e5e;
+}
+
+textarea::placeholder {
+    color: #5e5e5e;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+textarea {
+    border: none;
+    border-top: 1px solid #f80000;
+    border-left: 1px solid #f80000;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+}
+
+.login-form-field {
+    border: none;
+    border-bottom: 1px solid #f80000;
+    border-left: 1px solid #f80000;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0px 0px 5px 5px;
+}
+
+#login-form-submit {
+    width: 100%;
+    margin-top: 10px;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #a50707;
+    cursor: pointer;
+    outline: none;
+}
+
+.user-create {
+    position: absolute;
+    bottom: 16%;
+    right: 26%;
+    font-family: cursive;
+    text-decoration: none;
+    border-left: 1px solid red;
+    border-top: 1px solid red;
+    color: rgb(94, 3, 3);
+}
+
+.user-tweet {
+    opacity: 0.8;
+    position: absolute;
+    bottom: 4%;
+    right: 26%;
+    font-family: cursive;
+    text-decoration: none;
+    border-left: 1px solid red;
+    border-top: 1px solid red;
+    color: rgb(94, 3, 3);
+}
+
+.user:hover {
+    border-left: none;
+    border-top: none;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
+#submit {
+    width: 10%;
+    position: absolute;
+    bottom: 3%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #ad0808;
+    cursor: pointer;
+    outline: none;
+}
+
+.view-button {
+    text-decoration: none;
+    font-family: cursive;
+    color: white;
+    font-weight: bold;
+}
+
+#logout {
+    border-radius: 5px;
+    position: absolute;
+    right: 27%;
+    bottom: 15%;
+}
+
+#logout a img:hover {
+    box-shadow: 0px 0px 10px 0px rgba(117, 117, 117, 0.685);
+    border-radius: 5px;
+    transition: ease-in;
+    transition-duration: 250ms;
+}
+
+#tweet a img:hover {
+    box-shadow: 0px 0px 10px 0px rgba(117, 117, 117, 0.699);
+    border-radius: 5px;
+    transition: ease-in;
+    transition-duration: 250ms;
+}
+
+#tweet {
+    position: absolute;
+    left: 27%;
+    bottom: 15%;
+    box-shadow: rgba(165, 165, 165, 0.616);
+}
+
+p {
+    color: rgb(182, 3, 3);
+    padding-top: -15px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.tweet {
+    width: 95%;
+}
+
+.this {
+    opacity: 0.7;
+    color: rgb(179, 2, 2);
+    position: absolute;
+    top: 33%;
+    left: 45%;
+}
+
+.Naming{
+font-family: cursive;
+padding-left:3px;
+}

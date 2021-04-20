@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-page.css">
+    <title>Public Tweets</title>
+</head>
+
+<body>
+    <div id="main-holder2">
+        <h1><img src="twitter.png" alt="" width="40px" style="transform: scaleX(-1) ;" srcset=""> Public Tweets <img src="twitter.png" alt="" width="60px" srcset=""></h1>
+        ​
+        <div class="chat-box Naming">
+            <% for (let t of locals.tweets) { %>
+                <div class="tweet">
+<b><%= t.dataValues.User.dataValues.username %>  says: </b>
+                    <%= t.dataValues.content %> 
+                </div>
+                <% } %>
+        </div>
+
+
+        <button id="submit"><a class="view-button" href="/createTweet">tweet a reply</a></button>
+        <a class="user-tweet user" href="/">Create an account to tweet</a>
+
+    </div>
+</body>
+
+</html>
